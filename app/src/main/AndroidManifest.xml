@@ -23,6 +23,9 @@
             android:name=".saveinstancestate.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".bitmapcompress.BitmapCompressActivity"
+            android:label="@string/title_activity_bitmap_compress"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

@@ -93,5 +93,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
-    <string name="save_instance_state_manual"><![CDATA[Make sure [Developer options] -> [Don\'t keep activities] is ON then click anywhere below]]></string>
+    <string name="save_instance_state_manual">Make sure [Developer options] -> [Don\'t keep activities] is ON then click anywhere below</string>
+    <string name="title_activity_bitmap_compress">BitmapCompressActivity</string>
 </resources>
