@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,14 +19,21 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name=".saveinstancestate.SaveInstanceStateActivity"/>
+
+        <activity android:name=".saveinstancestate.SaveInstanceStateActivity" />
         <activity
             android:name=".saveinstancestate.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".bitmapcompress.BitmapCompressActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".bitmapcompress.BitmapCompressActivity"
             android:label="@string/title_activity_bitmap_compress"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".nativelib.NativeLibActivity"
+            android:label="@string/title_activity_native_lib" />
     </application>
 
 </manifest>
