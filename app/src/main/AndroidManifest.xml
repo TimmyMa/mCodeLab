@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tech.mlaboratory.mcodelab">
 
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,21 +22,24 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-
         <activity android:name=".saveinstancestate.SaveInstanceStateActivity" />
         <activity
             android:name=".saveinstancestate.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".bitmapcompress.BitmapCompressActivity"
             android:label="@string/title_activity_bitmap_compress"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".nativelib.NativeLibActivity"
             android:label="@string/title_activity_native_lib" />
+        <activity
+            android:name=".opengl.OpenGLES20Activity"
+            android:label="@string/title_activity_open_gl" />
+        <activity android:name=".statusbar.StatusBarActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/title_activity_status_bar" />
     </application>
 
 </manifest>
