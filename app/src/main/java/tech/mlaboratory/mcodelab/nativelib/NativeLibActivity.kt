@@ -3,6 +3,7 @@ package tech.mlaboratory.mcodelab.nativelib
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
+import com.ifeng.daemon.facade.NativeSecureparam
 import com.ziroom.commonlibrary.util.SignKeyUtil
 import tech.mlaboratory.mcodelab.R
 
@@ -20,7 +21,25 @@ class NativeLibActivity : AppCompatActivity() {
             append((SignKeyUtil.getHouseKey() ?: "") + "\n")
 
             append("SignKey :")
-            append(SignKeyUtil.getSignKey() ?: "")
+            append(SignKeyUtil.getSignKey() ?: "" + "\n")
+
+            append("readMD5Key :" )
+            append(NativeSecureparam.readMD5Key() ?: "" + "\n")
+
+            append("readPacketPublicKey :" )
+            append(NativeSecureparam.readPacketPublicKey() ?: "" + "\n")
+
+            append("readPacketSalt :" )
+            append(NativeSecureparam.readPacketSalt() ?: "" + "\n")
+
+            append("readSig2Key :" )
+            append(NativeSecureparam.readSig2Key() ?: "" + "\n")
+
+            append("readUserCreditPublicKey :" )
+            append(NativeSecureparam.readUserCreditPublicKey() ?: "" + "\n")
+
+            append("readUserCreditSalt :" )
+            append(NativeSecureparam.readUserCreditSalt() ?: "" + "\n")
         }
     }
 }

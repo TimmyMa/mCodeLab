@@ -6,6 +6,7 @@
     tools:context="tech.mlaboratory.mcodelab.nativelib.NativeLibActivity">
 
     <TextView
+        android:textIsSelectable="true"
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
