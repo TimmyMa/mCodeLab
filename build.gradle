@@ -34,5 +34,5 @@ ext {
     minSdkVersion = 15
     targetSdkVersion = 26
 
-    supportLibVersion = "26.1.0"
+    supportLibVersion = "27.1.1"
 }
