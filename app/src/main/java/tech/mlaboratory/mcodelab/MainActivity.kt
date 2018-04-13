@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import tech.mlaboratory.mcodelab.bitmapcompress.BitmapCompressActivity
 import tech.mlaboratory.mcodelab.nativelib.NativeLibActivity
+import tech.mlaboratory.mcodelab.opengl.OpenGLES20Activity
 import tech.mlaboratory.mcodelab.saveinstancestate.SaveInstanceStateActivity
+import tech.mlaboratory.mcodelab.statusbar.StatusBarActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,5 +27,13 @@ class MainActivity : AppCompatActivity() {
 
     fun nativeLibActivity(view: View) {
         startActivity(Intent(view.context, NativeLibActivity::class.java))
+    }
+
+    fun openGLActivity(view: View) {
+        startActivity(Intent(view.context, OpenGLES20Activity::class.java))
+    }
+
+    fun statusBarActivity(view: View) {
+        startActivity(Intent(view.context, StatusBarActivity::class.java))
     }
 }
