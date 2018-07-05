@@ -2,7 +2,6 @@ package tech.mlaboratory.mcodelab
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.View
 import tech.mlaboratory.mcodelab.bitmapcompress.BitmapCompressActivity
 import tech.mlaboratory.mcodelab.nativelib.NativeLibActivity
@@ -10,7 +9,7 @@ import tech.mlaboratory.mcodelab.opengl.OpenGLES20Activity
 import tech.mlaboratory.mcodelab.saveinstancestate.SaveInstanceStateActivity
 import tech.mlaboratory.mcodelab.statusbar.StatusBarActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

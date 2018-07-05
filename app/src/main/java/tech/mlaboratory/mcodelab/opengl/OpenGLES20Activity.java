@@ -15,11 +15,12 @@
  */
 package tech.mlaboratory.mcodelab.opengl;
 
-import android.app.Activity;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 
-public class OpenGLES20Activity extends Activity {
+import tech.mlaboratory.mcodelab.BaseActivity;
+
+public class OpenGLES20Activity extends BaseActivity {
 
     private GLSurfaceView mGLView;
 

@@ -1,13 +1,13 @@
 package tech.mlaboratory.mcodelab.nativelib
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import com.ifeng.daemon.facade.NativeSecureparam
 import com.ziroom.commonlibrary.util.SignKeyUtil
+import tech.mlaboratory.mcodelab.BaseActivity
 import tech.mlaboratory.mcodelab.R
 
-class NativeLibActivity : AppCompatActivity() {
+class NativeLibActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

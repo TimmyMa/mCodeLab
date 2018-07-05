@@ -1,12 +1,12 @@
 package tech.mlaboratory.mcodelab.saveinstancestate
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import tech.mlaboratory.mcodelab.BaseActivity
 import tech.mlaboratory.mcodelab.R
 import java.text.SimpleDateFormat
 import java.util.*
 
-class SaveInstanceStateActivity : AppCompatActivity() {
+class SaveInstanceStateActivity : BaseActivity() {
 
     private var firstCreateTime: String? = null
 

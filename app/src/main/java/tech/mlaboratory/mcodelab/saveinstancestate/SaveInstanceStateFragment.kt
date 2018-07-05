@@ -19,10 +19,10 @@ class SaveInstanceStateFragment : Fragment() {
 
     private var firstCreateTime: String? = null
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        val view = inflater!!.inflate(R.layout.fragment_save_instance_state, container, false)
+        val view = inflater.inflate(R.layout.fragment_save_instance_state, container, false)
 
         if (savedInstanceState == null) {
             val sdf = SimpleDateFormat("HH:mm:ss:SSS", Locale.getDefault())
@@ -41,8 +41,8 @@ class SaveInstanceStateFragment : Fragment() {
         return view
     }
 
-    override fun onSaveInstanceState(outState: Bundle?) {
+    override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState?.putString("TimeString", firstCreateTime)
+        outState.putString("TimeString", firstCreateTime)
     }
 }
