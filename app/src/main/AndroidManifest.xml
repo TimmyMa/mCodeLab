@@ -37,9 +37,14 @@
         <activity
             android:name=".opengl.OpenGLES20Activity"
             android:label="@string/title_activity_open_gl" />
-        <activity android:name=".statusbar.StatusBarActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="@string/title_activity_status_bar" />
+        <activity
+            android:name=".statusbar.StatusBarActivity"
+            android:label="@string/title_activity_status_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".databinding.DataBindingActivity"
+            android:label="@string/title_activity_data_binding"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

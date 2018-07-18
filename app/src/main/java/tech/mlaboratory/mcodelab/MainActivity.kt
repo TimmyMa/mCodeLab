@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import tech.mlaboratory.mcodelab.bitmapcompress.BitmapCompressActivity
+import tech.mlaboratory.mcodelab.databinding.DataBindingActivity
 import tech.mlaboratory.mcodelab.nativelib.NativeLibActivity
 import tech.mlaboratory.mcodelab.opengl.OpenGLES20Activity
 import tech.mlaboratory.mcodelab.saveinstancestate.SaveInstanceStateActivity
@@ -34,5 +35,9 @@ class MainActivity : BaseActivity() {
 
     fun statusBarActivity(view: View) {
         startActivity(Intent(view.context, StatusBarActivity::class.java))
+    }
+
+    fun dataBindingActivity(view: View) {
+        startActivity(Intent(view.context, DataBindingActivity::class.java))
     }
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="user" type="tech.mlaboratory.mcodelab.databinding.User"/>
+        <variable name="handlers" type="tech.mlaboratory.mcodelab.databinding.MyHandlers"/>
+        <variable name="presenter" type="tech.mlaboratory.mcodelab.databinding.Presenter"/>
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.firstName}"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.lastName}"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.firstName}"
+            android:onClick="@{handlers.onClickFriend}"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.lastName}"
+            android:onClick="@{() -> presenter.onSaveClick(user)}"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.lastName}"
+            android:onClick="@{(view) -> presenter.onSaveClick(view, user)}"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onCheckedChanged="@{(cb, isChecked) -> presenter.completeChanged(user, isChecked)}" />
+    </LinearLayout>
+</layout>

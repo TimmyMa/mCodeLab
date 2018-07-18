@@ -98,4 +98,5 @@
     <string name="title_activity_native_lib">NativeLibActivity</string>
     <string name="title_activity_open_gl">OpenGLActivity</string>
     <string name="title_activity_status_bar">StatusBarActivity</string>
+    <string name="title_activity_data_binding">DataBindingActivity</string>
 </resources>
