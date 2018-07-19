@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ipc.IPCActivity">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/buttonAdd"
+                android:text="ADD BOOK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="add"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/buttonQuery"
+                android:text="QUERY BOOK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="query"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/buttonAddListener"
+                android:text="ADD LISTENER"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="addListener"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/buttonRemoveListener"
+                android:text="REMOVE LISTENER"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="removeListener"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewLog"
+            android:textSize="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</layout>
+

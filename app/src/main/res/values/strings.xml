@@ -99,4 +99,5 @@
     <string name="title_activity_open_gl">OpenGLActivity</string>
     <string name="title_activity_status_bar">StatusBarActivity</string>
     <string name="title_activity_data_binding">DataBindingActivity</string>
+    <string name="title_activity_ipc">IPCActivity</string>
 </resources>

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import tech.mlaboratory.mcodelab.bitmapcompress.BitmapCompressActivity
 import tech.mlaboratory.mcodelab.databinding.DataBindingActivity
+import tech.mlaboratory.mcodelab.ipc.IPCActivity
 import tech.mlaboratory.mcodelab.nativelib.NativeLibActivity
 import tech.mlaboratory.mcodelab.opengl.OpenGLES20Activity
 import tech.mlaboratory.mcodelab.saveinstancestate.SaveInstanceStateActivity
@@ -39,5 +40,9 @@ class MainActivity : BaseActivity() {
 
     fun dataBindingActivity(view: View) {
         startActivity(Intent(view.context, DataBindingActivity::class.java))
+    }
+
+    fun ipcActivity(view: View) {
+        startActivity(Intent(view.context, IPCActivity::class.java))
     }
 }
