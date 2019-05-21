@@ -54,7 +54,14 @@
         <activity
             android:name=".ipc.IPCActivity"
             android:label="@string/title_activity_ipc"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".touch.LogTouchEventActivity"
+            android:label="@string/title_activity_log_touch_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".touch.TouchActivity"
+            android:label="@string/title_activity_touch"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

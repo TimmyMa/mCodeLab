@@ -100,4 +100,6 @@
     <string name="title_activity_status_bar">StatusBarActivity</string>
     <string name="title_activity_data_binding">DataBindingActivity</string>
     <string name="title_activity_ipc">IPCActivity</string>
+    <string name="title_activity_log_touch_event">LogTouchEventActivity</string>
+    <string name="title_activity_touch">TouchActivity</string>
 </resources>
