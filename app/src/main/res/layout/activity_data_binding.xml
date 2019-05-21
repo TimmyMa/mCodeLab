@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{user.firstName}"
-            android:onClick="@{handlers.onClickFriend}"/>
+            android:onClick="@{handlers::onClickFriend}"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
