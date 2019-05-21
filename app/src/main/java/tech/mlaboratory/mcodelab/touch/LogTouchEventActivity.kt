@@ -2,8 +2,8 @@ package tech.mlaboratory.mcodelab.touch
 
 import android.content.Context
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.MotionEvent
 import kotlinx.android.synthetic.main.activity_ignorant_view.*
@@ -51,14 +51,20 @@ fun translateMotionEvent(ev: MotionEvent?): String {
     }
 
     val actionName = when(ev.actionMasked) {
-        MotionEvent.ACTION_DOWN -> "DOWN"
+        MotionEvent.ACTION_DOWN -> "DOWN        "
         MotionEvent.ACTION_POINTER_DOWN -> "POINTER_DOWN"
-        MotionEvent.ACTION_MOVE -> "MOVE"
-        MotionEvent.ACTION_UP -> "UP"
-        MotionEvent.ACTION_POINTER_UP -> "POINTER_UP"
-        MotionEvent.ACTION_CANCEL -> "CANCEL"
-        else -> "UNKNOWN ${ev.actionMasked}"
+        MotionEvent.ACTION_MOVE -> "MOVE        "
+        MotionEvent.ACTION_UP -> "UP          "
+        MotionEvent.ACTION_POINTER_UP -> "POINTER_UP  "
+        MotionEvent.ACTION_CANCEL -> "CANCEL      "
+        else -> "UNKNOWN     "
     }
 
-    return " Action: $actionName, pointer count: ${ev.pointerCount}"
+    val pointerInfoStringBuffer = StringBuffer()
+    pointerInfoStringBuffer.append("pointer count: ${ev.pointerCount}, ")
+    for(pointerIndex in 0 until ev.pointerCount) {
+        pointerInfoStringBuffer.append("pointer $pointerIndex at ${ev.getX(pointerIndex)}, ${ev.getY(pointerIndex)}, ")
+    }
+
+    return " Action: $actionName, ${pointerInfoStringBuffer.dropLast(2)}"
 }
