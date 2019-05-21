@@ -2,7 +2,9 @@ package tech.mlaboratory.mcodelab
 
 import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatDelegate
 import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
 import tech.mlaboratory.mcodelab.bitmapcompress.BitmapCompressActivity
 import tech.mlaboratory.mcodelab.databinding.DataBindingActivity
 import tech.mlaboratory.mcodelab.ipc.IPCActivity
@@ -17,6 +19,18 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        radioGroup.setOnCheckedChangeListener { group, checkedId ->
+            when(checkedId) {
+                R.id.radioButton -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                R.id.radioButton2 -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                R.id.radioButton3 -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+            }
+            recreate()
+        }
     }
 
     fun saveInstanceStateActivity(view: View) {
