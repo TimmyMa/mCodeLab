@@ -1,4 +1,4 @@
-package tech.mlaboratory.mcodelab.touch
+package tech.mlaboratory.mcodelab.view.touch
 
 import android.content.Context
 import android.content.Intent

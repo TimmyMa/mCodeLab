@@ -102,4 +102,5 @@
     <string name="title_activity_ipc">IPCActivity</string>
     <string name="title_activity_log_touch_event">LogTouchEventActivity</string>
     <string name="title_activity_touch">TouchActivity</string>
+    <string name="title_activity_view_group">ViewGroupActivity</string>
 </resources>

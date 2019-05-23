@@ -12,7 +12,8 @@ import tech.mlaboratory.mcodelab.nativelib.NativeLibActivity
 import tech.mlaboratory.mcodelab.opengl.OpenGLES20Activity
 import tech.mlaboratory.mcodelab.saveinstancestate.SaveInstanceStateActivity
 import tech.mlaboratory.mcodelab.statusbar.StatusBarActivity
-import tech.mlaboratory.mcodelab.touch.TouchActivity
+import tech.mlaboratory.mcodelab.view.touch.TouchActivity
+import tech.mlaboratory.mcodelab.view.viewgroup.ViewGroupActivity
 
 class MainActivity : BaseActivity() {
 
@@ -63,5 +64,9 @@ class MainActivity : BaseActivity() {
 
     fun touchActivity(view: View) {
         startActivity(Intent(view.context, TouchActivity::class.java))
+    }
+
+    fun viewGroupActivity(view: View) {
+        startActivity(Intent(view.context, ViewGroupActivity::class.java))
     }
 }
